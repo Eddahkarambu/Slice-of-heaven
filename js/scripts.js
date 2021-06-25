@@ -22,9 +22,12 @@ var pizza ={
 }
 
 function clientsOrder(menu, sizes,toppins) {
-  this.menu = menu;
+  this.pizza = menu;
   this.sizes = sizes;
   this.toppins = toppins;
+  this.hash = 1
+  this.quantity = 1
+  this.total = 1
 }
 var clientsOrderArray=[]
 
@@ -47,3 +50,10 @@ $(document).ready(function(){
 
   });
 });
+
+var populateTable = function(){
+  $('#table').bootstrapTable({});
+    function load(){
+
+    }
+}
