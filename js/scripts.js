@@ -99,7 +99,7 @@ $(document).ready(function(){
     var div = document.getElementById('Total');
     div.innerHTML += 'TOTAL COST '
     div.innerHTML += tota;
-    alert("your delivery will be done , welcome back.")
+    $('.toast').toast('show')
   });
 });
 
