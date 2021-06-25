@@ -86,6 +86,7 @@
   font-size: 20px;
   font-style: italic;
   text-decoration:underline;
+  padding-bottom: 20px;
 
 }
 .PIZZAMENU{
@@ -98,4 +99,18 @@
 .details{
   padding-bottom: 150px;
   padding-top: 50px;
+}
+.submite{
+  padding-top: 20px;
+  padding-bottom:  20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.submit{
+  padding-top: 20px;
+  padding-bottom:  20px;
+  font-weight: bold;
+  text-align: center;
+
 }
