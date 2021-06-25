@@ -1,14 +1,14 @@
 # Author
 Eddah Karambu
 #### Description
-
+These classic slice of heaven originals blend your favorite ingredients to create distinctively unforgettable flavor combinations. Every one of our Signature and Max Pizzas start with a generous portion of chicken and beef pepperoni or any other.
 
 
 
 #### By **Eddah Karambu**
 
 ## Setup/Installation Requirements
-* Git clone this project at
+* Git clone this project at https://github.com/Eddahkarambu/Slice-of-heaven.git
 * Cd into DealaniStudio
 * open the project with atom by typing `atom .`
 * To view it in browser click `option + w` command
@@ -19,7 +19,7 @@ This website uses  CSS, HTML, JavaScript, JQuery, Bootstrap.
 incase of any questions or  facing any difficulties you can  contact Eddah karambu via email.
 gikundaeddah@gmail.com
 ## Website url
-
+https://eddahkarambu.github.io/Slice-of-heaven/
 
 
 
