@@ -97,7 +97,7 @@
   text-decoration:underline;
 }
 .details{
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   padding-top: 50px;
 }
 .submite{
@@ -112,5 +112,26 @@
   padding-bottom:  20px;
   font-weight: bold;
   text-align: center;
+}
+.delivery{
+  font-weight: bold;
+  font-size: 20px;
+}
+.cash{
+  padding-bottom:  20px;
+  font-weight: bold;
+  color: blue;
+}
+.Total{
+  padding-top: 20px;
+  padding-bottom:  20px;
+  font-weight: bold;
 
+  font-size: 20px;
+}
+.CHECKOUT{
+  padding-top: 20px;
+  padding-bottom:  20px;
+  font-weight: bold;
+  text-align: center;
 }
