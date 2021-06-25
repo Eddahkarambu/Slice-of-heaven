@@ -23,12 +23,22 @@ var pizza ={
 
 function clientsOrder(menu, sizes,toppins) {
   this.pizza = menu;
-  this.sizes = sizes;
+  this.size = sizes;
   this.toppins = toppins;
-  this.hash = 1
-  this.quantity = 1
-  this.total = 1
+  this.hash = 1;
+  this.quantity = 1;
+  this.total = this.calculateTotal();
 }
+clientsOrder.prototype.calculateTotal = function(){
+  var pizzaPrice = pizzaPrices[this.size];
+  var price = 0
+  this.toppins.forEach(toppin => {
+    price += extraToppins[toppin]
+
+  });
+  return pizzaPrice + price
+}
+
 var clientsOrderArray=[]
 
 $(document).ready(function(){
@@ -45,15 +55,20 @@ $(document).ready(function(){
       console.log(order)
       clientsOrderArray.push(order);
       console.log(clientsOrderArray);
-
-
+      populateTable(clientsOrderArray)
 
   });
 });
 
-var populateTable = function(){
+var populateTable = function(data){
   $('#table').bootstrapTable({});
     function load(){
+      $('#table').bootstrapTable("load", {data});
 
     }
+    function reload(){
+      $('#table').bootstrapTable("load", data);
+
+    }
+    load();
 }
