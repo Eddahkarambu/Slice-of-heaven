@@ -18,9 +18,7 @@
   position: absolute;
   right: 100px;
 }
-.whole{
-  display: flex;
-}
+
 .flex{
   display: flex;
   padding-top: 10px;
@@ -61,19 +59,43 @@
   padding-left: 150px;
 }
 .toppins{
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .Extras{
   font-weight: bold;
-  font-size: 20px
+  font-size: 20px;
+  font-style: italic;
+  text-decoration:underline;
 }
 .head{
   font-weight: bold;
   font-size: 20px;
   padding-top: 40px;
+  font-style: italic;
+  text-decoration:underline;
 }
 .HEADER2{
   font-weight: bold;
   font-size: 20px;
-  padding-top: 40px;  
+  padding-top: 40px;
+  font-style: italic;
+  text-decoration:underline;
+}
+.header3{
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration:underline;
+
+}
+.PIZZAMENU{
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 40px;
+  font-style: italic;
+  text-decoration:underline;
+}
+.details{
+  padding-bottom: 150px;
+  padding-top: 50px;
 }
