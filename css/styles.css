@@ -73,6 +73,7 @@
   padding-top: 40px;
   font-style: italic;
   text-decoration:underline;
+
 }
 .HEADER2{
   font-weight: bold;
@@ -87,6 +88,7 @@
   font-style: italic;
   text-decoration:underline;
   padding-bottom: 20px;
+  display: none;
 
 }
 .PIZZAMENU{
@@ -116,17 +118,20 @@
 .delivery{
   font-weight: bold;
   font-size: 20px;
+  display: none;
+  display: none;
 }
 .cash{
   padding-bottom:  20px;
   font-weight: bold;
   color: blue;
+  display: none;
 }
 .Total{
   padding-top: 20px;
   padding-bottom:  20px;
   font-weight: bold;
-
+  display: none;
   font-size: 20px;
 }
 .CHECKOUT{
@@ -134,4 +139,11 @@
   padding-bottom:  20px;
   font-weight: bold;
   text-align: center;
+  display: none;
+}
+.col{
+  display: none;
+}
+.all{
+  display: none;
 }

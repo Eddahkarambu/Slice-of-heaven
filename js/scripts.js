@@ -20,7 +20,7 @@ var pizza ={
   vegTikka:"Veg Tikka",
   bbqsteak:"BBQ Steak"
 }
-
+var delivery = false;
 function clientsOrder(menu, sizes,toppins) {
   this.pizza = menu;
   this.size = sizes;
@@ -52,13 +52,75 @@ $(document).ready(function(){
       });
       toppings.pop();
       var order = new clientsOrder(menu,sizes,toppings);
-      console.log(order)
       clientsOrderArray.push(order);
-      console.log(clientsOrderArray);
       populateTable(clientsOrderArray)
 
   });
+  $("#btnn").click(function(){
+    $(".all").show();
+    $(".header3").show();
+    $(".col").show();
+    $(".Total").show();
+    $(".details").hide();
+    $(".delivery").show();
+    $(".cash").show();
+    $(".CHECKOUT").show();
+
+  })
+  var rad = document.getElementById("flexRadioDefault1");
+  rad.addEventListener('change', function(){
+    $(".header3").show();
+    $(".col").show();
+    $(".Total").show();
+    $(".delivery").show();
+    $(".cash").show();
+    $(".CHECKOUT").show();
+    $(".details").show();
+    delivery = true;
+
+
+  });
+  var rade = document.getElementById("flexRadioDefault2");
+  rade.addEventListener('change', function(){
+    $(".header3").show();
+    $(".col").show();
+    $(".Total").show();
+    $(".details").hide();
+    $(".delivery").show();
+    $(".cash").show();
+    $(".CHECKOUT").show();
+    delivery = false;
+
+
+  });
+
+  $("#btnnn").click(function(){
+    var tota = calculateTotal();
+    var div = document.getElementById('Total');
+    div.innerHTML += 'TOTAL COST '
+    div.innerHTML += tota;
+    alert("your delivery will be done , welcome back.")
+  });
 });
+
+
+
+
+
+
+  var calculateTotal = function(){
+    var total=0
+    clientsOrderArray.forEach((totals) => {
+      total  += totals.total
+    });
+    if(delivery) {
+      total += 200;
+    }
+    return total;
+
+}
+
+
 
 var populateTable = function(data){
   $('#table').bootstrapTable({});
